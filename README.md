@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+# MICA
+
+I have edited this file. 
+
+--CTodd
+=======
 # MICA GitHub Intro 
 
 1. Add to this README file and then sign your name. 
@@ -8,3 +15,4 @@ OK?
 Edits by: 
 -CTodd 
 -[your name here]
+>>>>>>> master
