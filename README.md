@@ -3,8 +3,8 @@
 1. Add to this README file and then sign your name. 
 2. Ceate a pull-request for it
 
-OK?
+OK? 
 
-Edits by:
--CTodd
+Edits by: 
+-CTodd 
 -[your name here]
