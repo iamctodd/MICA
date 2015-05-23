@@ -1,8 +1,7 @@
 # MICA GitHub Intro 
-## You can add tot heis README fil and then sign your name. 
 
-### Then reate a pull-request for it
-
+1. Add to this README file and then sign your name. 
+2. Ceate a pull-request for it
 
 OK?
 
