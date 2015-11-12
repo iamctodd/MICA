@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
 	<link href="{{ asset("/bower_components/admin-lte/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset("/bower_components/admin-lte/dist/css/skins/skin-green.min.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset("/bower_components/admin-lte/dist/css/skins/skin-blue.min.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset("/bower_components/admin-lte/dist/css/main.css")}}" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
     <![endif]-->
   </head>
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="hold-transition skin-green layout-top-nav">
+  <body class="hold-transition skin-blue layout-top-nav">
     <div class="wrapper">
 
       <header class="main-header">
@@ -201,43 +202,371 @@
           </div><!-- /.container-fluid -->
         </nav>
       </header>
-      <!-- Full Width Column -->
-      <div class="content-wrapper">
-        <div class="container">
-          <!-- Content Header (Page header) -->
-          <section class="content-header">
-            <h1>
-              Top Navigation
-              <small>Example 2.0</small>
-            </h1>
-            <ol class="breadcrumb">
-              <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-              <li><a href="#">Layout</a></li>
-              <li class="active">Top Navigation</li>
-            </ol>
-          </section>
 
-          <!-- Main content -->
-          <section class="content">
-            <div class="callout callout-info">
-              <h4>Tip!</h4>
-              <p>Add the layout-top-nav class to the body tag to get this layout. This feature can also be used with a sidebar! So use this class if you want to remove the custom dropdown menus from the navbar and use regular links instead.</p>
-            </div>
-            <div class="callout callout-danger">
-              <h4>Warning!</h4>
-              <p>The construction of this layout differs from the normal one. In other words, the HTML markup of the navbar and the content will slightly differ than that of the normal layout.</p>
-            </div>
-            <div class="box box-default">
-              <div class="box-header with-border">
-                <h3 class="box-title">Blank Box</h3>
+          
+      <!-- Full Width Column -->
+      <div class="content-wrapper" style="background-image: url(http://www.crossresults.com/img/fma6.jpg); background-repeat: no-repeat; background-size: cover;" >
+        <div class="container col-md-offset-4" >
+          <!-- Content Header (Page header) -->
+          <section class="content-header" >
+            <h1>
+              We wrangle data... so you don't have to
+            </h1>
+          </section>
+		 
+		  
+		  <div class="register-box" >
+		  <div class="register-box-body" style="background-color: rgba(255, 255, 255, 0.4);">
+        <p class="login-box-msg">Sign up</p>
+        <form action="../../index.html" method="post">
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" placeholder="Full name">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="email" class="form-control" placeholder="Email">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Retype password">
+            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox"> I agree to the <a href="#">terms</a>
+                </label>
               </div>
-              <div class="box-body">
-                The great content goes here
-              </div><!-- /.box-body -->
-            </div><!-- /.box -->
-          </section><!-- /.content -->
-        </div><!-- /.container -->
-      </div><!-- /.content-wrapper -->
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+
+        <div class="social-auth-links text-center">
+	      <span class="col-xs-4">  
+          <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign up using Facebook</a>
+	      </span>
+	       <span class="col-xs-4">
+          <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign up using Google+</a>
+	       </span>
+        </div>
+			
+        <a href="login.html" class="text-center">I already have a membership</a>
+      </div><!-- /.form-box -->
+    </div><!-- /.register-box -->
+
+
+	</div><!-- /.content-wrapper --> 
+	</div><!-- /.content-wrapper --> 
+			
+      
+          <!-- Main content -->
+          <section class="top-results" style="background-color: white;">
+            <div class="row">
+            <div class="col-md-3">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Condensed Table</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <table class="table table-condensed table-hover">
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Task</th>
+                      <th>Progress</th>
+                      <th style="width: 40px">Label</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-red">55%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Clean database</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-yellow">70%</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Cron job running</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-light-blue">30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Fix and squish bugs</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-green">90%</span></td>
+                    </tr>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+            <div class="col-md-3">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Condensed Table</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <table class="table table-condensed table-hover">
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Task</th>
+                      <th>Progress</th>
+                      <th style="width: 40px">Label</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-red">55%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Clean database</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-yellow">70%</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Cron job running</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-light-blue">30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Fix and squish bugs</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-green">90%</span></td>
+                    </tr>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+              <div class="col-md-3">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Condensed Table</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <table class="table table-condensed table-hover">
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Task</th>
+                      <th>Progress</th>
+                      <th style="width: 40px">Label</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-red">55%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Clean database</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-yellow">70%</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Cron job running</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-light-blue">30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Fix and squish bugs</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-green">90%</span></td>
+                    </tr>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+            <div class="col-md-3">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Condensed Table</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <table class="table table-condensed table-hover">
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Task</th>
+                      <th>Progress</th>
+                      <th style="width: 40px">Label</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-red">55%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Clean database</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-yellow">70%</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Cron job running</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-light-blue">30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Fix and squish bugs</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-green">90%</span></td>
+                    </tr>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+            </div><!-- /.row -->
+      <div id="features" class="features">
+        <header>
+          <h3 class="text-center">Responsive multi-layout admin built with AngularJS. </h3>
+        </header>
+        <div class="container">
+          <div class="row">
+            <div class="feature-item col-md-4 text-center"><i class="fa fa-arrows-alt"></i>
+              <h3>Responsive Design</h3>
+              <div class="desc">
+                <p>Auto adjust layout according to screen size. Looks good on desktop, tablet and phone.</p>
+              </div>
+            </div>
+            <div class="feature-item col-md-4 text-center"><i class="fa fa-columns"></i>
+              <h3>Multiple Layouts</h3>
+              <div class="desc">
+                <p>Wide and boxed layout.<br>vertical and horizaon navigation，<br>toggle for fixed top header and sidebar menu.</p>
+              </div>
+            </div>
+            <div class="feature-item col-md-4 text-center"><i class="fa fa-desktop"></i>
+              <h3>Web App</h3>
+              <div class="desc">
+                <p>Single Page Application Built with AngularJS. <br>Fully AJAX powered, never refresh the entire page again. Faster, smoother.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="details" class="details">
+        <ul class="list-details list-unstyled">
+          <li>
+            <div class="container">
+              <div class="detail-item clearfix">
+                <div class="detail-desc">
+                  <h2>Responsive Design</h2>
+                  <p>Auto adjust layout according to screen size. <br>Looks good on desktop, tablet and phone.</p>
+                </div>
+                <div class="detail-img"><img src="assets/preview-responsive.png" alt="img"></div>
+              </div>
+            </div>
+          </li>
+          <li class="alt">
+            <div class="container">
+              <div class="detail-item clearfix">
+                <div class="detail-desc">
+                  <h2>Multiple Layouts</h2>
+                  <p>Wide and boxed layout.<br>vertical and horizaon navigation，<br>toggle for fixed top header and sidebar menu.</p>
+                </div>
+                <div class="detail-img"><img src="assets/preview-layouts.png" alt="img"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="container">
+              <div class="detail-item clearfix">
+                <div class="detail-desc">
+                  <h2>Web App</h2>
+                  <p>Single Page Application Built with AngularJS. <br>Fully AJAX powered, never refresh the entire page again.<br>Faster, smoother.</p>
+                </div>
+                <div class="detail-img"><img src="assets/preview-app.png" alt="img"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+</section>
+              
+      
+          
       <footer class="main-footer">
         <div class="container">
           <div class="pull-right hidden-xs">
